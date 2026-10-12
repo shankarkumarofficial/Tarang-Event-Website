@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TARANG - STC Pollachi</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f1f5f9, #e0e7ff);
+            color: #1e293b;
+        }
+
+        /* Banner */
+        #banner {
+            background: linear-gradient(120deg, #0f172a, #1d4ed8);
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+            box-shadow: 0 5px 15px #94a3b8;
+        }
+
+        #banner h1 {
+            font-size: 30px;
+            letter-spacing: 2px;
+            margin: 5px;
+            color: white;
+        }
+
+        #banner h2 {
+            font-size: 45px;
+            letter-spacing: 6px;
+            margin: 15px 0;
+            color: #facc15;
+        }
+
+        #banner p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        /* Details Section */
+        #details {
+            display: flex;
+            gap: 25px;
+            margin: 35px;
+        }
+
+        #event-details,
+        #registration-events {
+            flex: 1;
+            padding: 25px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #cbd5e1;
+        }
+
+        #event-details {
+            border-top: 6px solid #2563eb;
+        }
+
+        #registration-events {
+            border-top: 6px solid #7c3aed;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        h3 {
+            background-color: #f8fafc;
+            color: #334155;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 5px solid #3b82f6;
+            font-size: 17px;
+        }
+
+        #registration-events h3 {
+            border-left-color: #8b5cf6;
+        }
+
+        .fee {
+            color: #7c3aed;
+            font-weight: bold;
+        }
+
+        .date {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        /* Register Button - Only Animation */
+        button {
+            display: block;
+            margin: 30px auto;
+            padding: 14px 40px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease,
+                        background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1e3a8a;
+            transform: scale(1.1);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+        /* Mobile Responsive */
+        @media screen and (max-width: 600px) {
+            #details {
+                flex-direction: column;
+                margin: 20px;
+            }
+
+            #banner h1 {
+                font-size: 24px;
+            }
+
+            #banner h2 {
+                font-size: 35px;
+            }
+
+            #banner p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="banner">
+        <h1>STC | Pollachi</h1>
+        <h2>TARANG</h2>
+        <p>Inter-College Cultural Fest</p>
+        <p>Date: 09-10-2026</p>
+    </div>
+
+    <div id="details">
+
+        <div id="event-details">
+            <h1>Event Details</h1>
+
+            <h3>Quiz Competition</h3>
+            <h3>Connection</h3>
+            <h3>Dancing Competition</h3>
+        </div>
+
+        <div id="registration-events">
+            <h1>Registration Details</h1>
+
+            <h3>
+                Registration Fee:
+                <span class="fee">Rs. 150</span>
+            </h3>
+
+            <h3>
+                Last Date:
+                <span class="date">08-10-2026</span>
+            </h3>
+
+            <h3>Venue: STC, Pollachi</h3>
+        </div>
+
+    </div>
+
+    <button onclick="alert('Thank you for your interest in TARANG!')">
+        Register Now
+    </button>
+
+    <footer>
+        <p>Copyright 2026 TARANG | STC Pollachi</p>
+        <p>Let Your Talent Shine</p>
+    </footer>
+
+</body>
+</html>
